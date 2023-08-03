@@ -25,7 +25,7 @@ import java.util.concurrent.ExecutionException;
         return properties;
     }
 
-    void send(String topic, String key, T value) throws ExecutionException, InterruptedException {
+    void  send(String topic, String key, T value) throws ExecutionException, InterruptedException {
         ProducerRecord<String, T> record = new ProducerRecord<>(topic, key, value);
         Callback getCallback = (data, ex) -> {
             if (ex != null) {

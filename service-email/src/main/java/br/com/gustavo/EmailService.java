@@ -11,7 +11,7 @@ public class EmailService {
     public static void main(String[] args) {
         var emailService = new EmailService();
         try (var service = new KafkaService(EmailService.class.getSimpleName(),
-                "ECOMMERCE_NEW_ORDER",
+                "ECOMMERCE_SEND_EMAIL",
                 emailService::parse,
                 String.class,
                 Map.of(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName()))) {

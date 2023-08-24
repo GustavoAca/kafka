@@ -1,6 +1,43 @@
-- [English](#Study-on-Apache-Kafka)
 - [Español](#Estudio-sobre-Apache-Kafka)
+- [English](#Study-on-Apache-Kafka)
 
+# Estudo sobre Apache Kafka
+
+Neste documento, exploraremos o funcionamento do Apache Kafka e entenderemos seus conceitos fundamentais.
+
+## Procedimento
+
+### Baixa a última versão do Scala e Kafka
+
+Antes de começar, baixaremos a última versão do Scala e Kafka em [sitio web oficial de Kafka](https://kafka.apache.org/downloads).
+
+### Execução do Apache Kafka
+
+Siga esses passos para executar Apache Kafka:
+
+1. Descompacte o zip que baixou.
+2. Abra um terminal dentro da psta zipada.
+
+Após isso, inicie o serviço do ZooKeeper:
+
+```bash 
+bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+
+inicie o serviço do Kakfa:
+
+```bash 
+bin/kafka-server-start.sh config/server.properties
+```
+aquí temos a orden recomendado para importar e executar os módulos:
+
+> Importe o módulo COMMOM-KAFKA. <br>
+> Importe o módulo SERVICE-EMAIL. <br>
+> Importe o módulo SERVICE-FRAUD-DETECTOR. <br>
+> Importe o módulo SERVICE-LOG. <br>
+> Importe o módulo SERVICE-NEW-ORDER. <br>
+
+---
 # Estudio sobre Apache Kafka
 
 En este documento, exploraremos el funcionamiento de Apache Kafka y entenderemos sus conceptos fundamentales.
